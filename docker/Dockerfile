@@ -20,6 +20,6 @@ VOLUME ["/srv/http"]
 
 EXPOSE 80/tcp 443/tcp
 
-ENTRYPOINT /usr/sbin/php-fpm --daemonize && /usr/sbin/nginx -t && /usr/sbin/nginx && /bin/bash
+ENTRYPOINT /usr/sbin/php-fpm --daemonize && /usr/sbin/nginx -t && /usr/sbin/nginx -g "daemon off;"
 
 CMD ["true"]
