@@ -5,4 +5,4 @@ IMAGE=nginx_docker_centos
 all: build
 
 build:
-    docker build --rm -t $(IMAGE) .
+	docker build --rm -t $(IMAGE) .
